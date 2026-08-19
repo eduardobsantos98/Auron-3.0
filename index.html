@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auron Elite — Códigos de Acesso Digital & Recargas</title>
+  <meta name="description"
+    content="Compre seus códigos de acesso e cartões presente digitais da Auron Elite com ativação imediata via Pix no WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0D0D0D;
+      --bg-card: #18181B;
+      --bg-card-hover: #1F1F23;
+      --primary: #FF3B30;
+      --primary-gradient: linear-gradient(135deg, #FF3B30 0%, #DC2626 100%);
+      --accent-green: #25D366;
+      --text-main: #FFFFFF;
+      --text-muted: #A1A1AA;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    /* HEADER */
+    header {
+      background: rgba(13, 13, 13, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 16px 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(37, 211, 102, 0.3);
+      border: 1px solid rgba(37, 211, 102, 0.5);
+    }
+
+    .logo span {
+      color: var(--accent-green);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    .badge {
+      background: rgba(37, 211, 102, 0.12);
+      border: 1px solid rgba(37, 211, 102, 0.3);
+      color: var(--accent-green);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(90deg, #25D366, #00E676);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+    .features-pills {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill span {
+      color: var(--accent-green);
+      font-weight: bold;
+    }
+
+    /* GIFT CARDS GRID */
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-bottom: 60px;
+    }
+
+    /* GIFT CARD DESIGN */
+    .gift-card-wrapper {
+      background: var(--bg-card);
+      border-radius: 20px;
+      padding: 16px;
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .gift-card-wrapper:hover {
+      transform: translateY(-8px);
+      border-color: rgba(255, 42, 95, 0.4);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .gift-card-wrapper.featured {
+      border: 2px solid var(--primary);
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: var(--primary-gradient);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 10px rgba(255, 59, 48, 0.4);
+    }
+
+    /* DIGITAL CARD GRAPHIC */
+    .digital-card {
+      width: 100%;
+      aspect-ratio: 1 / 1.35;
+      border-radius: 14px;
+      background: linear-gradient(145deg, #ff2a5f 0%, #4a00e0 100%);
+      position: relative;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    /* CARD BACKGROUND ACCENTS */
+    .digital-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 45px;
+      height: 12px;
+      background: rgba(0, 0, 0, 0.3);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .card-days {
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-days span {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      opacity: 0.9;
+    }
+
+    .card-center {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .card-logo-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      margin: 0 auto 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .card-logo-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+
+    .card-brand-name {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+
+    .card-title-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 8px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 4px;
+      backdrop-filter: blur(4px);
+    }
+
+    .card-box-info {
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-box-icon {
+      width: 32px;
+      height: 32px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .card-box-text h5 {
+      font-size: 10px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      letter-spacing: 0.5px;
+    }
+
+    .card-box-text p {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* CARD BOTTOM DETAILS & CTA */
+    .card-details {
+      padding-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .price-tag {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .price-currency {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .price-amount {
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .btn-buy {
+      width: 100%;
+      background: var(--accent-green);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-buy:hover {
+      background: #00E676;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+
+    /* HOW IT WORKS SIMPLE */
+    .how-it-works {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      padding: 40px 30px;
+      margin-bottom: 60px;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .step-item {
+      text-align: center;
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      background: rgba(37, 211, 102, 0.15);
+      color: var(--accent-green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 auto 15px;
+    }
+
+    .step-item h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .step-item p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* FOOTER */
+    .site-footer {
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 40px;
+      margin-top: 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-grid h4 {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .footer-grid p {
+      margin-bottom: 6px;
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-green);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-links {
+        align-items: center;
+      }
+    }
+
+    /* STICKY WHATSAPP BUTTON */
+    .wa-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent-green);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      z-index: 999;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1);
+    }
+
+    /* CATALOG SECTION */
+    .catalog-section {
+      margin-bottom: 60px;
+    }
+
+    .catalog-container {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      border: 1px solid rgba(37, 211, 102, 0.3);
+      padding: 40px 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(37, 211, 102, 0.05);
+    }
+
+    .catalog-header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .catalog-header h2 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .catalog-header p {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .catalog-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+
+    .catalog-item:hover {
+      transform: translateY(-3px);
+      border-color: rgba(37, 211, 102, 0.3);
+      background: rgba(37, 211, 102, 0.03);
+    }
+
+    .catalog-item h4 {
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .catalog-item h4 small {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: normal;
+    }
+
+    .catalog-item p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .catalog-stats {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 20px 0;
+      margin-bottom: 25px;
+    }
+
+    .stat-item {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .catalog-footer {
+      text-align: center;
+    }
+
+    .catalog-footer p {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .btn-scroll-up {
+      display: inline-block;
+      background: rgba(37, 211, 102, 0.1);
+      color: var(--accent-green);
+      border: 1px solid rgba(37, 211, 102, 0.3);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-scroll-up:hover {
+      background: var(--accent-green);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 40px 0 20px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+      }
+
+      .features-pills {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .catalog-container {
+        padding: 30px 20px;
+      }
+
+      .catalog-header h2 {
+        font-size: 22px;
+      }
+
+      .how-it-works {
+        padding: 30px 20px;
+      }
+
+      .steps-grid {
+        gap: 35px;
+      }
+
+      .section-title h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">
+        <img src="Planos/Auron.png" alt="Auron Elite Logo" class="logo-img">
+        Auron<span>Elite</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <span class="badge">Suporte WhatsApp</span><br>
+      <span class="badge">Entrega Digital Imediata</span>
+      <h1>Sua TV Sem Limites: <span>Acesso Premium em Segundos</span></h1>
+      <p>O melhor reprodutor multimídia de alta performance para a sua família. Desfrute de uma plataforma digital
+        completa, com máxima estabilidade e ativação imediata.</p>
+
+      <div class="features-pills">
+        <div class="pill"><span>✓</span> Envio Automático / Pix</div>
+        <div class="pill"><span>✓</span> Sem Fidelidade</div>
+        <div class="pill"><span>✓</span> Suporte Humano</div>
+        <div class="pill"><span>✓</span> Qualidade Full HD / 4K</div>
+      </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section>
+      <div class="section-title">
+        <h2>Escolha o seu plano e comece a assistir agora mesmo:</h2>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- CARD 30 DIAS -->
+        <div class="gift-card-wrapper" style="padding: 12px; gap: 12px;">
+          <img src="Planos/30 DIAS.png" alt="Cartão 30 Dias" style="width: 100%; border-radius: 12px; display: block;">
+          <a href="https://wa.me/555191798572?text=Olá,%20quero%20comprar%20o%20Gift%20Card%20de%2030%20dias%20(R$%2029,90)"
+            class="btn-buy" target="_blank">
+            Comprar Recarga
+          </a>
+        </div>
+
+        <!-- CARD 90 DIAS -->
+        <div class="gift-card-wrapper" style="padding: 12px; gap: 12px;">
+          <img src="Planos/90 DIAS.png" alt="Cartão 90 Dias" style="width: 100%; border-radius: 12px; display: block;">
+          <a href="https://wa.me/555191798572?text=Olá,%20quero%20comprar%20o%20Gift%20Card%20de%2090%20dias%20(R$%2079,90)"
+            class="btn-buy" target="_blank">
+            Comprar Recarga
+          </a>
+        </div>
+
+        <!-- CARD 180 DIAS -->
+        <div class="gift-card-wrapper featured" style="padding: 12px; gap: 12px;">
+          <span class="featured-badge">Mais Vendido</span>
+          <img src="Planos/180 dias.png" alt="Cartão 180 Dias"
+            style="width: 100%; border-radius: 12px; display: block;">
+          <a href="https://wa.me/555191798572?text=Olá,%20quero%20comprar%20o%20Gift%20Card%20de%20180%20dias%20(R$%20149,90)"
+            class="btn-buy" target="_blank">
+            Comprar Recarga
+          </a>
+        </div>
+
+        <!-- CARD 365 DIAS -->
+        <div class="gift-card-wrapper" style="padding: 12px; gap: 12px;">
+          <img src="Planos/365 dias.png" alt="Cartão 365 Dias"
+            style="width: 100%; border-radius: 12px; display: block;">
+          <a href="https://wa.me/555191798572?text=Olá,%20quero%20comprar%20o%20Gift%20Card%20de%20365%20dias%20(R$%20289,90)"
+            class="btn-buy" target="_blank">
+            Comprar Recarga
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CATÁLOGO DE CONTEÚDO -->
+    <section class="catalog-section" id="catalogo">
+      <div class="catalog-container">
+        <div class="catalog-header">
+          <h2>O Maior Catálogo de Entretenimento na Sua Mão</h2>
+          <p>Um único código libera acesso completo a todas as categorias abaixo em alta definição (4K e Full HD).</p>
+        </div>
+
+        <div class="catalog-grid">
+          <div class="catalog-item">
+            <h4>📺 Variedades em Tempo Real</h4>
+            <p>Acesso estável a notícias, conteúdos educativos e entretenimento diversificado sem travamentos.</p>
+          </div>
+          <div class="catalog-item">
+            <h4>⚽ Eventos Esportivos</h4>
+            <p>Acompanhe transmissões esportivas e grandes eventos com tecnologia de streaming de ponta.</p>
+          </div>
+          <div class="catalog-item">
+            <h4>🎬 Catálogo Audiovisual</h4>
+            <p>Reprodutor de mídia em 4K e som de alta fidelidade para as suas produções favoritas.</p>
+          </div>
+          <div class="catalog-item">
+            <h4>🍿 Conteúdo Sob Demanda</h4>
+            <p>Acesse coleções completas de conteúdos digitais com organização inteligente e fluidez.</p>
+          </div>
+          <div class="catalog-item">
+            <h4>👦 Perfil Kids Seguro</h4>
+            <p>Ambiente seguro e dedicado ao público infantil com recursos de navegação controlada.</p>
+          </div>
+          <div class="catalog-item">
+            <h4>🔒 Conteúdo Restrito <small>(Opcional)</small></h4>
+            <p>Proteção avançada de conteúdo privado com controle parental via senha de 4 dígitos.</p>
+          </div>
+        </div>
+
+        <div class="catalog-stats">
+          <div class="stat-item">📺 Milhares de Horas de Mídia</div>
+          <div class="stat-item">⚡ Servidores de Alta Performance</div>
+          <div class="stat-item">🍿 Qualidade 4K / Ultra HD</div>
+          <div class="stat-item">🎧 Áudio Digital Otimizado</div>
+        </div>
+
+        <div class="catalog-footer">
+          <p>Tudo isso Liberado Instantaneamente no Seu Plano</p>
+          <a href="#" class="btn-scroll-up" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">⬆
+            Escolher Meu Plano Acima</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA SIMPLIFICADO -->
+    <section class="how-it-works">
+      <div class="section-title">
+        <h2>Como funciona a compra?</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <h4>Escolha o Cartão</h4>
+          <p>Selecione a validade desejada acima e clique em comprar.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <h4>Pague via Pix</h4>
+          <p>Chave Pix enviada na hora pelo atendimento do WhatsApp.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <h4>Ativação do Aplicativo</h4>
+          <p>Após confirmação, receba a confirmação da ativação pelo WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-contact">
+          <h4>Atendimento ao Cliente</h4>
+          <p>📧 E-mail: tvesstreaming@gmail.com</p>
+          <p>📱 WhatsApp: +55 51 9179-8572</p>
+        </div>
+        <div class="footer-links">
+          <h4>Políticas e Segurança</h4>
+          <a href="politica-privacidade.html">Política de Privacidade</a>
+          <a href="termos-servico.html">Termos de Serviço</a>
+          <a href="politica-devolucao.html">Política de Devolução</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Auron Elite — Todos os direitos reservados. Soluções em Gestão Multimídia.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <a href="https://wa.me/555191798572?text=Olá!%20Tenho%20dúvidas%20sobre%20as%20recargas." class="wa-float"
+    target="_blank" aria-label="Suporte WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.48 1.32 4.99L2 22l5.25-1.38c1.45.79 3.08 1.21 4.78 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.83 14.1c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.31-1.62-.6-2.84-1.23-4.69-4.1-4.83-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09 1-2.38.26-.28.57-.35.76-.35h.55c.18 0 .42-.07.65.5.24.58.81 2 .88 2.15.07.14.11.31.02.5-.09.19-.14.31-.28.47-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.61-.07.16-.19.68-.79.87-1.06.18-.28.37-.23.62-.14.26.09 1.63.77 1.91.91.28.14.47.21.53.33.07.12.07.68-.17 1.36z" />
+    </svg>
+  </a>
+
+</body>
+
+</html>
